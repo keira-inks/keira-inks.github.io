@@ -1,0 +1,274 @@
+.short-stack-regular {
+  font-family: "Short Stack", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fuzzy-bubbles-regular {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fuzzy-bubbles-bold {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.hachi-maru-pop-regular {
+  font-family: "Hachi Maru Pop", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.love-ya-like-a-sister-regular {
+  font-family: "Love Ya Like A Sister", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dongle-regular {
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gamja-flower-regular {
+  font-family: "Gamja Flower", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 5px;
+  }
+
+/****************   Nav Section **********************/
+nav {
+  font-family: "Fuzzy Bubbles";
+  display: flex;
+  justify-content: space-between;
+	background-color: rgb(197, 251, 255);
+  border: solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+  display: flex;
+  justify-content: center;
+	background-color: rgb(197, 251, 255);
+  border: solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*********** Splash Page ************************/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	background-color: rgb(74, 224, 235);
+  border: solid black;
+  margin-top: 5px;
+  
+}
+
+header h1 {
+  font-family: "Short Stack";
+  color: rgb(11, 5, 130);
+}
+
+header img {
+  border: solid;
+  border-radius: 50px;
+}
+
+.headshot {
+  margin-bottom: 21.44px;
+}
+
+.address {
+ font-family: "Fuzzy Bubbles";
+}
+
+.tagline {
+  font-family: "Fuzzy Bubbles";
+  font-size: 20px;
+}
+
+.personal-desc {
+  border: solid black;
+  background-color: rgb(126, 214, 215);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.education {
+  border: solid black;
+  background-color: rgb(131, 238, 254);
+  margin-top: 10px;
+}
+
+.honors-awards {
+  border: solid black;
+  background-color: rgb(126, 214, 215);
+  margin-top: 10px;
+}
+
+.skills {
+ border: solid black;
+  background-color: rgb(131, 238, 254);
+  margin-top: 10px;
+}
+
+.lead-exp {
+  border: solid black;
+  background-color: rgb(126, 214, 215);
+  margin-top: 10px;
+}
+
+.projects {
+  border: solid black;
+  background-color: rgb(131, 238, 254);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/************* Sections ********************/
+hr {
+
+}
+
+section h2 {
+  font-family: "Love Ya Like A Sister";
+}
+
+section h3 {
+  font-family: "Hachi Maru Pop";
+  color: rgb(11, 5, 130);
+}
+
+section dl {
+  font-family: "Gamja Flower";
+  font-size: 25px;
+}
+
+section ul {
+  list-style-image: url('../images/star.png');
+  font-family: "Gamja Flower";
+  font-size: 25px;
+}
+
+section a {
+  color: rgb(2, 146, 203);
+  background-color: rgb(210, 246, 246);
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+.qualifications dl {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.card img {
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid black;
+  flex-wrap: wrap;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .three-col {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+}
+
+/**************   Contact Page   *****************/
+a {
+  color: rgb(2, 146, 203);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.contact {
+  border: solid black;
+  background-color: rgb(57, 183, 192);
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px
+}
+
+.one-col {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 180px;
+  height: 40px;
+}
+
+textarea {
+  width: 300px;
+  height: 60px;
+  font-family: "Courier Prime";
+  border: solid black;
+}
+
+button {
+  width: 50px;
+  height: 30px;
+}
+.one-col label {
+  font-family: "Love Ya Like A Sister";
+}
+
+.one-col input::placeholder {
+  font-family: "Gamja Flower";
+  font-size: 20px;
+}
+
+input[type="text"],
+input[type="email"] {
+  font-family: "Courier Prime";
+  font-size: 15px;
+  border: solid black;
+}
+
